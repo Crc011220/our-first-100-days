@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5ead8" />
+    <title>我们的第一个一百天</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="bgm" loop preload="none" src="assets/the-hundredth-day.mp3"></audio>
+    <main>
+      <section class="hero">
+        <div class="grain"></div>
+        <button class="music" id="musicButton" aria-label="播放背景音乐">♪ <span>第几个一百天</span></button>
+        <div class="hero-photo"><img src="assets/cover.png" alt="我们的回忆" /></div>
+        <p class="eyebrow">OUR FIRST 100 DAYS</p>
+        <h1>写给我们<br /><em>第一个一百天</em></h1>
+        <p class="hero-copy">不是每一天都闪闪发光，<br />但和你在一起的每一天，都值得被珍藏。</p>
+        <a href="#memories" class="down" aria-label="查看回忆">↓</a>
+      </section>
+
+      <section class="intro" id="memories">
+        <p class="eyebrow">ONE HUNDRED DAYS, MANY LITTLE MOMENTS</p>
+        <h2>把日子，折成一封封信</h2>
+        <p>点开每一张照片，我们再走一遍那些小小的、却很重要的瞬间。</p>
+      </section>
+
+      <section class="timeline" aria-label="我们的回忆时间线">
+        <article class="memory-card featured" data-index="0">
+          <div class="card-image"><img src="assets/disney-1.jpg" alt="迪士尼的回忆" /></div>
+          <div class="card-content"><p class="date">04 · 19</p><h3>第一次一起去迪士尼</h3><p>把快乐开到最大声的一天。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/disney-1.jpg" alt="" /><img src="assets/disney-2.jpg" alt="" /><img src="assets/disney-3.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card" data-index="1">
+          <div class="card-image"><img src="assets/hangzhou-1.jpg" alt="杭州周末游" /></div>
+          <div class="card-content"><p class="date">05 · 15 — 17</p><h3>杭州的慢周末</h3><p>把两天过得像一整个夏天。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/hangzhou-1.jpg" alt="" /><img src="assets/hangzhou-2.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card flower" data-index="2">
+          <div class="card-image"><img src="assets/flower.jpg" alt="520的花" /></div>
+          <div class="card-content"><p class="date">05 · 20</p><h3>一束花的心意</h3><p>有些喜欢，不必说得很大声。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/flower.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card" data-index="3">
+          <div class="card-image"><img src="assets/concert-1.jpg" alt="演唱会" /></div>
+          <div class="card-content"><p class="date">05 · 22</p><h3>一起听的现场</h3><p>人海很大，但身边刚好是你。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/concert-1.jpg" alt="" /><img src="assets/concert-2.jpg" alt="" /><img src="assets/concert-3.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card" data-index="4">
+          <div class="card-image"><img src="assets/xuhui.jpg" alt="徐汇滨江" /></div>
+          <div class="card-content"><p class="date">06 · 14</p><h3>徐汇滨江的风</h3><p>一起做 AI 视频，也一起收藏傍晚。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/xuhui.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card" data-index="5">
+          <div class="card-image"><img src="assets/summer-1.jpg" alt="夏日摸鱼镇" /></div>
+          <div class="card-content"><p class="date">06 · 27</p><h3>夏日摸鱼镇</h3><p>偷一点闲，也偷一点只属于我们的时间。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/summer-1.jpg" alt="" /><img src="assets/summer-2.jpg" alt="" /><img src="assets/summer-3.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card" data-index="6">
+          <div class="card-image"><img src="assets/badminton.jpg" alt="打羽毛球" /></div>
+          <div class="card-content"><p class="date">日常</p><h3>球场上的默契</h3><p>平常的一天，因为你也变得特别。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/badminton.jpg" alt="" /></div>
+        </article>
+        <article class="memory-card" data-index="7">
+          <div class="card-image"><img src="assets/rain-1.jpg" alt="大雨中的大宁" /></div>
+          <div class="card-content"><p class="date">07 · 19</p><h3>暴雨也没关系</h3><p>因为我们一起，天气就有了另一种名字。</p><span>打开回忆 ↗</span></div>
+          <div class="photos"><img src="assets/rain-1.jpg" alt="" /><img src="assets/rain-2.jpg" alt="" /></div>
+        </article>
+      </section>
+
+      <section class="letter">
+        <p class="eyebrow">A LITTLE PROMISE</p><h2>下一百天，<br />也请多多指教。</h2>
+        <button id="promiseButton">点一下，收下我的心意 <b>♥</b></button>
+        <p class="secret" id="secret">愿我们一直有话说、有处去、有彼此。<br />第 101 天开始，也继续把平凡的日子过成故事吧。</p>
+      </section>
+      <footer>made with all my love · 100 days &amp; counting</footer>
+    </main>
+    <dialog id="memoryDialog">
+      <button class="close" aria-label="关闭">×</button><div id="dialogContent"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
