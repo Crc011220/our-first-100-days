@@ -56,7 +56,8 @@ function renderGallery(events) {
 fetch('assets/data/gallery.json')
   .then((response) => response.json())
   .then(({ events, total }) => {
-    document.querySelector('.intro > p:last-child').textContent = `一共 ${total} 张照片，按每一个事件好好收藏。点开它们，我们再走一遍那些小小的、却很重要的瞬间。`;
+    const introCopy = document.querySelector('.intro > p:last-child');
+    if (introCopy) introCopy.textContent = `一共 ${total} 张照片，按每一个事件好好收藏。点开它们，我们再走一遍那些小小的、却很重要的瞬间。`;
     renderMilestones(events);
     renderGallery(events);
   })
