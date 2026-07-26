@@ -60,7 +60,10 @@ fetch('assets/data/gallery.json')
     renderMilestones(events);
     renderGallery(events);
   })
-  .catch(() => { gallery.innerHTML = '<p class="gallery-error">回忆正在装进相册，请稍后再来看看。</p>'; });
+  .catch((error) => {
+    console.error('Memory gallery failed to load:', error);
+    gallery.innerHTML = '<p class="gallery-error">回忆正在装进相册，请稍后再来看看。</p>';
+  });
 
 close.addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
