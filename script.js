@@ -53,7 +53,7 @@ function renderGallery(events) {
   }));
 }
 
-fetch('assets/data/gallery.json')
+fetch('assets/data/gallery.json?v=100days-timeline-2')
   .then((response) => response.json())
   .then(({ events, total }) => {
     const introCopy = document.querySelector('.intro > p:last-child');
