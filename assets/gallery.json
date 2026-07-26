@@ -4,10 +4,8 @@
     {
       "title": "4.19迪士尼",
       "date": "4.19",
-      "count": 15,
+      "count": 13,
       "images": [
-        "assets/memories/event-01/photo-001.jpg",
-        "assets/memories/event-01/photo-002.jpg",
         "assets/memories/event-01/photo-003.jpg",
         "assets/memories/event-01/photo-004.jpg",
         "assets/memories/event-01/photo-005.jpg",
@@ -56,8 +54,10 @@
     {
       "title": "5.22陶喆虹口足球场演唱会",
       "date": "5.22",
-      "count": 15,
+      "count": 17,
       "images": [
+        "assets/memories/event-01/photo-001.jpg",
+        "assets/memories/event-01/photo-002.jpg",
         "assets/memories/event-04/photo-001.jpg",
         "assets/memories/event-04/photo-002.jpg",
         "assets/memories/event-04/photo-003.jpg",
