@@ -3,6 +3,8 @@ const content = document.querySelector('#dialogContent');
 const close = document.querySelector('.close');
 const gallery = document.querySelector('#gallery');
 const milestoneTimeline = document.querySelector('#milestoneTimeline');
+const assetVersion = '100days-photo-fix-1';
+const assetUrl = (path) => `${path}?v=${assetVersion}`;
 
 function renderMilestones(events) {
   const milestones = events.filter((event) => event.day);
@@ -31,7 +33,7 @@ function renderMilestones(events) {
 function renderGallery(events) {
   gallery.innerHTML = events.map((event, index) => `
     <article class="memory-card ${index === 0 ? 'featured' : ''}" data-index="${index}">
-      <div class="card-image"><img loading="lazy" src="${event.images[0]}" alt="${event.title}" /></div>
+      <div class="card-image"><img loading="lazy" src="${assetUrl(event.images[0])}" alt="${event.title}" /></div>
       <div class="card-content">
         ${event.location ? `<p class="date">${event.location}</p>` : ''}
         <h3>${event.title}</h3>
@@ -47,13 +49,13 @@ function renderGallery(events) {
       <h2 class="modal-title">${event.title}</h2>
       ${event.location ? `<p class="modal-note">${event.location}</p>` : ''}
       ${event.caption ? `<p class="modal-note">${event.caption}</p>` : ''}
-      <div class="gallery">${event.images.map((src) => `<img loading="lazy" src="${src}" alt="${event.title}">`).join('')}</div>
+      <div class="gallery">${event.images.map((src) => `<img loading="lazy" src="${assetUrl(src)}" alt="${event.title}">`).join('')}</div>
     `;
     dialog.showModal();
   }));
 }
 
-fetch('assets/data/gallery.json?v=100days-timeline-2')
+fetch('assets/data/gallery.json?v=100days-photo-fix-1')
   .then((response) => response.json())
   .then(({ events, total }) => {
     const introCopy = document.querySelector('.intro > p:last-child');
