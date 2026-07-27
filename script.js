@@ -55,7 +55,7 @@ function renderGallery(events) {
   }));
 }
 
-fetch('assets/data/gallery.json?v=100days-photo-fix-1')
+fetch('assets/data/gallery.json?v=100days-gallery-fix-2')
   .then((response) => response.json())
   .then(({ events, total }) => {
     const introCopy = document.querySelector('.intro > p:last-child');

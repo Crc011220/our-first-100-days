@@ -1,5 +1,5 @@
 {
-  "total": 85,
+  "total": 87,
   "events": [
     {
       "title": "4.19 我们在一起的第二天",
@@ -7,8 +7,10 @@
       "day": 2,
       "location": "迪士尼",
       "caption": "我抽到了大猪猪厉害吗",
-      "count": 11,
+      "count": 13,
       "images": [
+        "assets/memories/event-01/photo-001.jpg",
+        "assets/memories/event-01/photo-002.jpg",
         "assets/memories/event-01/photo-003.jpg",
         "assets/memories/event-01/photo-004.jpg",
         "assets/memories/event-01/photo-005.jpg",
@@ -66,8 +68,6 @@
       "caption": "每次一见到你，像雨过天晴～",
       "count": 17,
       "images": [
-        "assets/memories/event-01/photo-001.jpg",
-        "assets/memories/event-01/photo-002.jpg",
         "assets/memories/event-04/photo-001.jpg",
         "assets/memories/event-04/photo-002.jpg",
         "assets/memories/event-04/photo-003.jpg",
@@ -82,7 +82,9 @@
         "assets/memories/event-04/photo-012.jpg",
         "assets/memories/event-04/photo-013.jpg",
         "assets/memories/event-04/photo-014.jpg",
-        "assets/memories/event-04/photo-015.jpg"
+        "assets/memories/event-04/photo-015.jpg",
+        "assets/memories/event-04/photo-016.jpg",
+        "assets/memories/event-04/photo-017.jpg"
       ]
     },
     {
