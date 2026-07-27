@@ -75,7 +75,7 @@ const promise = document.querySelector('#promiseButton');
 const secret = document.querySelector('#secret');
 promise.addEventListener('click', () => {
   secret.classList.toggle('show');
-  promise.innerHTML = secret.classList.contains('show') ? '我爱你 ♥' : '点一下，收下我的心意 <b>♥</b>';
+  promise.innerHTML = secret.classList.contains('show') ? '我爱你 ♥' : '点一下这里就给你摸鸡';
 });
 
 const player = document.querySelector('#bgm');
